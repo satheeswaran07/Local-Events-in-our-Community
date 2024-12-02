@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .payment-method {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Registration Form</h2>
+    <form action="#" method="POST">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <!-- Events Selection -->
+        <label for="events">Select Event:</label><br>
+        <input type="checkbox" id="music" name="events" value="Music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="dance" name="events" value="Dance">
+        <label for="dance">Dance</label><br><br>
+
+        <!-- Fun City Suggestions -->
+        <label for="suggestions">Suggestions for Fun City:</label><br>
+        <select id="suggestions" name="suggestions">
+            <option value="Option1">Amusement Parks and Theme Rides</option>
+            <option value="Option2">Skydiving or Bungee Jumping</option>
+            <option value="Option3">Hiking and Nature Trails</option>
+            <option value="Option4">Beach Sports and Water Activities</option>
+            <option value="Option5">Escape Rooms</option>
+        </select><br><br>
+
+        <!-- Payment Method -->
+        <div class="payment-method">
+            <label for="payment">Payment Method:</label><br>
+            <input type="radio" id="credit-card" name="payment" value="Credit Card">
+            <label for="credit-card">Credit Card</label><br>
+            <input type="radio" id="paypal" name="payment" value="PayPal">
+            <label for="paypal">PayPal</label><br>
+            <input type="radio" id="bank-transfer" name="payment" value="Bank Transfer">
+            <label for="bank-transfer">Bank Transfer</label><br><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
